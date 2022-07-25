@@ -42,7 +42,7 @@ body {
 }
 
 section {
-  padding: 2rem 9%;
+  padding: 2rem 6rem;
 }
 
 .header {
@@ -52,7 +52,7 @@ section {
   right: 0;
   z-index: 1000;
   background: rgba(0, 0, 0, 0.3);
-  padding: 3rem 9%;
+  padding: 2rem 9%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -124,4 +124,58 @@ section {
 .home .home-slider:hover .swiper-button-next,
 .home .home-slider:hover .swiper-button-prev {
   opacity: 1;
+}
+main {
+  margin: 0 auto;
+}
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  /* margin-top: 2rem; */
+}
+
+.card-section .card {
+  background: #222;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  color: #fff;
+}
+
+.card-section .content .name-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.card-section .content .name-div h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.card-section .content .likes {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--main-color);
+}
+.card-section .description {
+  text-align: center;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+.card-section .card .comment-btn {
+  padding: 10px;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  border: none;
+  background: transparent;
+  box-shadow: 0 10px 15px rgb(55 148 143);
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
