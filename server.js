@@ -12,7 +12,7 @@ const compiler = webpack(config);
 app.use(
   webpackDevMiddleware(compiler, {
     publicPath: config.output.publicPath,
-  })
+  }),
 );
 
 // Serve the files on port 3000.

@@ -77,8 +77,7 @@ $ npm start to run the local server
 
 👤 **ADEBOWALE ADEGBOYE**
 
-GitHub: [@githubhandle](https://github.com/ademibowale)
-
+- GitHub: [@githubhandle](https://github.com/ademibowale)
 - Twitter: [@twitterhandle](https://twitter.com/Ademibowale1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/adebowale-adegboye-143568221/)
 
