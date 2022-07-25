@@ -75,6 +75,12 @@ $ npm start to run the local server
 - Twitter: [@twitterhandle](https://twitter.com/techieEmma)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/nicholas-emmanuel-6b9775207)
 
+👤 **ADEBOWALE ADEGBOYE**
+
+GitHub: [@githubhandle](https://github.com/ademibowale)
+- Twitter: [@twitterhandle](https://twitter.com/Ademibowale1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/adebowale-adegboye-143568221/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
