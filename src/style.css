@@ -90,6 +90,11 @@ section {
   color: var(--main-color);
 }
 
+.header.active {
+  padding: 2rem 9%;
+  background: #222;
+}
+
 .home {
   padding: 0;
 }
@@ -125,14 +130,12 @@ section {
 .home .home-slider:hover .swiper-button-prev {
   opacity: 1;
 }
-main {
-  margin: 0 auto;
-}
+
 .card-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
-  /* margin-top: 2rem; */
+  margin-top: 2rem;
 }
 
 .card-section .card {
@@ -148,22 +151,27 @@ main {
   justify-content: space-between;
   padding: 10px;
 }
+
 .card-section .content .name-div h2 {
   font-size: 2rem;
   font-weight: 600;
   color: var(--main-color);
 }
+
 .card-section .content .likes {
   font-size: 2rem;
   font-weight: 900;
   color: var(--main-color);
 }
+
 .card-section .description {
   text-align: center;
   padding: 1rem 1.5rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
+
 .card-section .card .comment-btn {
   padding: 10px;
   font-size: 1.7rem;
@@ -178,4 +186,18 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer .credit {
+  padding: 1rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 0.1rem solid #fff3;
+  font-size: 2rem;
+  color: #aaa;
+  text-align: center;
+}
+
+.footer .credit span {
+  color: var(--main-color);
 }
