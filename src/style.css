@@ -52,6 +52,7 @@ section {
   right: 0;
   z-index: 1000;
   padding: 2rem 9%;
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -29,10 +29,11 @@ const showData = (data) => {
 const fetchData = async () => {
   const response = await fetch(API_URL);
   const data = await response.json();
-  for (let i = 0; i < 30; i += 1) {
+  for (let i = 0; i < 15; i += 1) {
     showData(data[i]);
   }
 };
+
 fetchData();
 
 export default fetchData;
