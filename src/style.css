@@ -4,6 +4,7 @@
   --main-color: #ef7819;
   --black: #141215;
 }
+
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -14,7 +15,6 @@
   text-decoration: none;
   text-transform: capitalize;
   transition: all 0.2s linear;
-  transition: width none;
 }
 
 html {
@@ -70,10 +70,14 @@ section {
 }
 
 @keyframes floating {
-  0%,
-  100% {
-    transform: translateY(0rem);
+  0% {
+    transform: translateY(0);
   }
+
+  100% {
+    transform: translateY(0);
+  }
+
   50% {
     transform: translateY(-1rem);
   }

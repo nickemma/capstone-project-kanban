@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 const swiper = new Swiper('.home-slider', {
   spaceBetween: 20,
   effect: 'fade',
