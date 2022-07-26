@@ -14,9 +14,11 @@ import './assets/images/image11.png';
 
 import swiper from './modules/slideshow.js';
 import fetchData from './modules/fetchData.js';
+import navbar from './modules/mobile.js';
 
 fetchData();
 swiper();
+navbar();
 
 // scroll spy
 const section = document.querySelectorAll('section');
