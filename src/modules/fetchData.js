@@ -24,6 +24,18 @@ const showData = (data) => {
         </div>
     `;
   cards.appendChild(cardContainer);
+  fetch(
+    'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/Y9ST6EsEV41gcCvlbOfZ/likes',
+  )
+    .then((res) => res.json())
+    .then((getData) => {
+      const likesFilter = getData.filter(
+        (items) => items.item_id === `${data.id}`,
+      )[0].likes;
+      if (!likesFilter) return;
+      const likesInfo = document.querySelector(`.likes-${data.id}`);
+      likesInfo.querySelector('span').textContent = likesFilter;
+    });
 };
 
 const fetchData = async () => {

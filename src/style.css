@@ -218,8 +218,9 @@ section {
   text-align: center;
 }
 
-.footer .credit span {
+.footer .credit span a {
   color: var(--main-color);
+  font-style: italic;
 }
 
 /* media queries  */
