@@ -94,9 +94,8 @@ section {
   color: var(--main-color);
 }
 
-.header.active {
-  padding: 2rem 9%;
-  background: #222;
+.menu {
+  display: none;
 }
 
 .header .menu {
@@ -108,10 +107,6 @@ section {
 
 .header .menu:hover {
   color: var(--main-color);
-}
-
-.menu {
-  display: none;
 }
 
 .home {
@@ -181,6 +176,7 @@ section {
   font-size: 2rem;
   font-weight: 900;
   color: var(--main-color);
+  cursor: pointer;
 }
 
 .card-section .description {

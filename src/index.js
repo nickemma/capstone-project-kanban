@@ -12,46 +12,13 @@ import './assets/images/image9.png';
 import './assets/images/image10.png';
 import './assets/images/image11.png';
 
-import swiper from './modules/slideshow.js';
+import swiperMe from './modules/slideshow.js';
 import fetchData from './modules/fetchData.js';
-import navbar from './modules/mobile.js';
+import addLike from './modules/addLike.js';
+import mobileMenu from './modules/mobile.js';
 
 fetchData();
-swiper();
-navbar();
-
-// scroll spy
-const section = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.header .navbar a');
-
-window.onscroll = () => {
-  if (window.scrollY > 0) {
-    document.querySelector('.header').classList.add('active');
-  } else {
-    document.querySelector('.header').classList.remove('active');
-  }
-
-  section.forEach((sec) => {
-    const top = window.scrollY;
-    const offset = sec.offsetTop - 200;
-    const height = sec.offsetHeight;
-    const id = sec.getAttribute('id');
-
-    if (top >= offset && top < offset + height) {
-      navLinks.forEach((link) => {
-        link.classList.remove('active');
-        document
-          .querySelector(`.header .navbar a[href*=${id}]`)
-          .classList.add('active');
-      });
-    }
-  });
-};
-
-window.onload = () => {
-  if (window.scrollY > 0) {
-    document.querySelector('.header').classList.add('active');
-  } else {
-    document.querySelector('.header').classList.remove('active');
-  }
-};
+swiperMe();
+addLike();
+mobileMenu();
+// postData();
