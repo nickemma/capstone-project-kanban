@@ -90,6 +90,11 @@ section {
   margin: 0 1rem;
 }
 
+.footer .credit span a {
+  color: var(--main-color);
+  font-style: italic;
+}
+
 .header .navbar a:hover {
   color: var(--main-color);
 }
@@ -216,11 +221,6 @@ section {
   font-size: 2rem;
   color: #aaa;
   text-align: center;
-}
-
-.footer .credit span a {
-  color: var(--main-color);
-  font-style: italic;
 }
 
 /* media queries  */

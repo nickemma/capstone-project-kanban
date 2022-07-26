@@ -1,5 +1,6 @@
 const likes = document.querySelector('.card-section');
-const url = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/Y9ST6EsEV41gcCvlbOfZ/likes';
+const url =
+  'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/Y9ST6EsEV41gcCvlbOfZ/likes';
 
 const addLike = () => {
   likes.addEventListener('click', (e) => {
@@ -10,7 +11,7 @@ const addLike = () => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        // Accept: 'application/json',
+        Accept: 'application/json',
       },
       body: JSON.stringify({
         item_id: item,
@@ -21,7 +22,7 @@ const addLike = () => {
       .then((data) => {
         const likesInfo = document.querySelector(`.likes-${item}`);
         likesInfo.querySelector('span').textContent = data.filter(
-          (items) => items.item_id === item,
+          (items) => items.item_id === item
         )[0].likes;
       });
   });
