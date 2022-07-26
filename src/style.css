@@ -223,6 +223,145 @@ section {
   text-align: center;
 }
 
+/* popup section */
+
+.popup-section {
+  background: #222;
+  display: none;
+}
+
+.popup {
+  width: 60vw;
+  height: 90vh;
+  padding: 30px 50px;
+  background-color: #2e3130;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+  gap: 20px;
+  border-radius: 20px;
+  overflow-y: scroll;
+  color: #d2d1d3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup #close-btn {
+  background: transparent;
+  border: none;
+  align-self: flex-end;
+  font-size: 4rem;
+  color: #d2d1d3;
+}
+
+.popup .display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup .display .description {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup .display .description img {
+  width: 90%;
+  border-radius: 20px;
+}
+
+.popup .display .description .game-title {
+  font-size: 2.8rem;
+}
+
+.popup .display .display-details {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup .display .display-details h3 {
+  font-size: 2rem;
+}
+
+.popup .display .display-details ul > li {
+  list-style: none;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.popup .comment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup .comment-section .comment-show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup .comment-section .comment-show h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #d2d1d3;
+}
+
+.popup .comment-section .comment-show ul {
+  list-style: none;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.popup .comment-section .comment {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup .comment-section .comment h3 {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+}
+
+.popup .comment-section .comment form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.popup .comment-section .comment form input[type='text'],
+.popup .comment-section .comment form textarea {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.popup .comment-section .comment form textarea {
+  height: 15rem;
+}
+
+.popup .comment-section .comment form .submit-btn {
+  align-self: flex-start;
+  font-size: 1.3rem;
+  font-weight: 900;
+  border: none;
+  padding: 10px;
+  border-radius: 0.5rem;
+}
+
 /* media queries  */
 
 @media (max-width: 991px) {
@@ -264,6 +403,10 @@ section {
 
   .card-section {
     grid-template-columns: 2fr;
+  }
+
+  .popup {
+    width: 90vw;
   }
 }
 
