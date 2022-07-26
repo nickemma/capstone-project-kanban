@@ -13,6 +13,10 @@ import './assets/images/image10.png';
 import './assets/images/image11.png';
 
 import swiper from './modules/slideshow.js';
+import fetchData from './modules/fetchData.js';
+
+fetchData();
+swiper();
 
 // scroll spy
 const section = document.querySelectorAll('section');

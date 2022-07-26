@@ -51,7 +51,6 @@ section {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.3);
   padding: 2rem 9%;
   display: flex;
   align-items: center;
@@ -67,7 +66,7 @@ section {
 .header .logo i {
   padding-right: 0.5rem;
   color: var(--main-color);
-  animation: floating 3s linear infinite;
+  animation: floating 2s linear infinite;
 }
 
 @keyframes floating {
@@ -186,6 +185,11 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.card-section .card .comment-btn:hover {
+  background: var(--main-color);
+  color: #fff;
 }
 
 .footer .credit {
