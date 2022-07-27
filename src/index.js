@@ -18,11 +18,13 @@ import addLike from './modules/addLike.js';
 import mobileMenu from './modules/mobile.js';
 import count from './modules/itemCounter.js';
 import Game from './modules/popUp.js';
+import addComment from './modules/addComment.js';
 
 fetchData();
 swiperMe();
 addLike();
 mobileMenu();
 count();
+addComment();
 const game = new Game();
 game.getGame();

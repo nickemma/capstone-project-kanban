@@ -44,11 +44,11 @@ export default class Game {
             </div>
           </div>
           <div class="comment-section">
-            <div class="comment-show">
+            <div class="comment-show comments-${data[index].id}">
               <h3 class="counter">
                 Comments(<span class="total-comments">0</span>)
               </h3>
-              <ul class="comments">
+              <ul class="comments ${data[index].id}"  id="${data[index].id}">
                
               </ul>
             </div>
@@ -56,13 +56,12 @@ export default class Game {
               <div class="add-comment">
                 <h3>Add Comment</h3>
               </div>
-              <form class="form">
+              <form class="form" data-get-comment="${data[index].id}">
                 <input
                   type="text"
                   name="name"
                   id="name"
                   placeholder="Your name"
-                  required=""
                 />
                 <textarea
                   name="description"
@@ -70,7 +69,6 @@ export default class Game {
                   cols="30"
                   rows="10"
                   placeholder="Your insight"
-                  required=""
                 ></textarea>
                 <button id="${data[index].id}" type="submit" class="submit-btn">
                   Comment
