@@ -16,9 +16,10 @@ import swiperMe from './modules/slideshow.js';
 import fetchData from './modules/fetchData.js';
 import addLike from './modules/addLike.js';
 import mobileMenu from './modules/mobile.js';
+import count from './modules/itemCounter.js';
 
 fetchData();
 swiperMe();
 addLike();
 mobileMenu();
-// postData();
+count();
