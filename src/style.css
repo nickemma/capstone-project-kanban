@@ -254,6 +254,7 @@ section {
   align-self: flex-end;
   font-size: 4rem;
   color: #d2d1d3;
+  cursor: pointer;
 }
 
 .popup .display {
@@ -359,6 +360,7 @@ section {
   border: none;
   padding: 10px;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 /* media queries  */
