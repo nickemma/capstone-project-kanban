@@ -38,12 +38,12 @@ const showData = (data) => {
     });
 };
 
-const fetchData = async () => {
-  const response = await fetch(API_URL);
-  const data = await response.json();
-  for (let i = 0; i < 15; i += 1) {
-    showData(data[i]);
-  }
+// const fetchData = async () => {
+//   const response = await fetch(API_URL);
+//   const data = await response.json();
+//   for (let i = 0; i < 15; i += 1) {
+//     showData(data[i]);
+//   }
 };
 
 fetchData();
