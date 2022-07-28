@@ -12,18 +12,30 @@ const showData = (data) => {
         <div class="content">
           <div class="name-div">
             <h2>${data.title}</h2>
-            <div class="likes">
-              <i class="fa-solid fa-heart" id="love"></i>
-              <span class="likes-info" id="516">4</span>
+            <div class="likes likes-${data.id}">
+              <i class="fa-solid fa-heart add-like" id="${data.id}"></i>
+              <span class="likes-info ${data.id}" id="${data.id}">4</span>
             </div>
           </div>
           <p class="description">
            ${data.short_description}
           </p>
-          <button id="516" class="comment-btn">Comments</button>
+          <button id="${data.id}" class="comment-btn">Comments</button>
         </div>
     `;
   cards.appendChild(cardContainer);
+  fetch(
+    'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/Y9ST6EsEV41gcCvlbOfZ/likes',
+  )
+    .then((res) => res.json())
+    .then((getData) => {
+      const likesFilter = getData.filter(
+        (items) => items.item_id === `${data.id}`,
+      )[0].likes;
+      if (!likesFilter) return;
+      const likesInfo = document.querySelector(`.likes-${data.id}`);
+      likesInfo.querySelector('span').textContent = likesFilter;
+    });
 };
 
 const fetchData = async () => {

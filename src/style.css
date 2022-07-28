@@ -90,13 +90,28 @@ section {
   margin: 0 1rem;
 }
 
+.footer .credit span a {
+  color: var(--main-color);
+  font-style: italic;
+}
+
 .header .navbar a:hover {
   color: var(--main-color);
 }
 
-.header.active {
-  padding: 2rem 9%;
-  background: #222;
+.menu {
+  display: none;
+}
+
+.header .menu {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.header .menu:hover {
+  color: var(--main-color);
 }
 
 .home {
@@ -166,6 +181,7 @@ section {
   font-size: 2rem;
   font-weight: 900;
   color: var(--main-color);
+  cursor: pointer;
 }
 
 .card-section .description {
@@ -207,6 +223,214 @@ section {
   text-align: center;
 }
 
-.footer .credit span {
-  color: var(--main-color);
+/* popup section */
+
+.popup-section {
+  background: #222;
+}
+
+.popup {
+  width: 60vw;
+  height: 90vh;
+  padding: 30px 50px;
+  background-color: #2e3130;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+  gap: 20px;
+  border-radius: 20px;
+  overflow-y: scroll;
+  color: #d2d1d3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup #close-btn {
+  background: transparent;
+  border: none;
+  align-self: flex-end;
+  font-size: 4rem;
+  color: #d2d1d3;
+  cursor: pointer;
+}
+
+.popup .display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup .display .description {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup .display .description img {
+  width: 90%;
+  border-radius: 20px;
+}
+
+.popup .display .description .game-title {
+  font-size: 2.8rem;
+}
+
+.popup .display .display-details {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup .display .display-details h3 {
+  font-size: 2rem;
+}
+
+.popup .display .display-details ul > li {
+  list-style: none;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.popup .comment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup .comment-section .comment-show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup .comment-section .comment-show h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #d2d1d3;
+}
+
+.popup .comment-section .comment-show ul {
+  list-style: none;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.popup .comment-section .comment {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup .comment-section .comment h3 {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+}
+
+.popup .comment-section .comment form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.popup .comment-section .comment form input[type='text'],
+.popup .comment-section .comment form textarea {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.popup .comment-section .comment form textarea {
+  height: 15rem;
+}
+
+.popup .comment-section .comment form .submit-btn {
+  align-self: flex-start;
+  font-size: 1.3rem;
+  font-weight: 900;
+  border: none;
+  padding: 10px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* media queries  */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    min-height: 70vh;
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .card-section {
+    grid-template-columns: 2fr;
+  }
+
+  .popup {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .home-slider .swiper-button-next,
+  .home .home-slider .swiper-button-prev {
+    display: none;
+  }
+
+  .card-section {
+    grid-template-columns: 1fr;
+  }
+
+  .card-section .card {
+    padding: 0.3rem;
+  }
+
+  .card-section .card .comment-btn {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 }
