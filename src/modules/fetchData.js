@@ -1,6 +1,12 @@
-const API_URL = 'https://www.freetogame.com/api/games?category=shooter';
+const API_URL = 'https://free-to-play-games-database.p.rapidapi.com/api/games?category=shooter';
 const cards = document.querySelector('.card-section');
-
+const options = {
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': '0123393eeamsh1bee10a3a220057p1fbee7jsn7ef939fd62ca',
+    'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com',
+  },
+};
 const showData = (data) => {
   const cardContainer = document.createElement('div');
   cardContainer.classList.add('card');
@@ -39,7 +45,7 @@ const showData = (data) => {
 };
 
 const fetchData = async () => {
-  const response = await fetch(API_URL);
+  const response = await fetch(API_URL, options);
   const data = await response.json();
   for (let i = 0; i < 15; i += 1) {
     showData(data[i]);
