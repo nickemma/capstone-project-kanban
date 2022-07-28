@@ -1,5 +1,4 @@
-const API_URL =
-  'https://free-to-play-games-database.p.rapidapi.com/api/games?category=shooter';
+const API_URL = 'https://free-to-play-games-database.p.rapidapi.com/api/games?category=shooter';
 const options = {
   method: 'GET',
   headers: {

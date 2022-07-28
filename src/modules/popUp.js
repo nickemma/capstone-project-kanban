@@ -8,8 +8,7 @@ const options = {
 export default class Game {
   // Initialization
   constructor() {
-    this.API_URL =
-      'https://free-to-play-games-database.p.rapidapi.com/api/games?category=shooter';
+    this.API_URL = 'https://free-to-play-games-database.p.rapidapi.com/api/games?category=shooter';
     this.gameContainer = document.querySelector('.content');
   }
 
