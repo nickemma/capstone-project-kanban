@@ -240,7 +240,7 @@ section {
   transform: translate(-50%, -50%);
   justify-content: space-between;
   gap: 20px;
-  border-radius: 20px;
+  border-radius: 21px;
   overflow-y: scroll;
   color: #d2d1d3;
   display: flex;
