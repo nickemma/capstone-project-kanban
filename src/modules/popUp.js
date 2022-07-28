@@ -1,12 +1,20 @@
+const options = {
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': '0123393eeamsh1bee10a3a220057p1fbee7jsn7ef939fd62ca',
+    'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com',
+  },
+};
 export default class Game {
   // Initialization
   constructor() {
-    this.API_URL = 'https://www.freetogame.com/api/games?category=shooter';
+    this.API_URL =
+      'https://free-to-play-games-database.p.rapidapi.com/api/games?category=shooter';
     this.gameContainer = document.querySelector('.content');
   }
 
   getGame = async () => {
-    const response = await fetch(this.API_URL);
+    const response = await fetch(this.API_URL, options);
     const data = await response.json().catch((error) => new Error(error));
     this.popupGame(data);
   };
