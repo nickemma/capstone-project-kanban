@@ -11,10 +11,3 @@ const count = async () => {
 count();
 
 export default count;
-
-// count();
-
-// const count = () => {
-//   fetch(API_URL)
-//     .then((res) => res.json())
-/
