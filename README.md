@@ -10,7 +10,6 @@ capstone-project-kanban
 This is the second Microverse capstone project meant to summarize all the content learned through module 2. The objective was to mimic the appearance of a dynamic web application, in a similar way a web developer would receive the requirements as if it were in a job.
 
 The pull request is opened to get a review on the project and check for any required changes.
-zoom video link[https://drive.google.com/file/d/1ItL60OwsZNKqn0vyHos-YpiP3xjydRch/view?usp=sharing]
 
 ## Built With
 
