@@ -1,5 +1,4 @@
 const API_URL = 'https://www.freetogame.com/api/games?category=shooter';
-// const counter = document.querySelector('.counter');
 
 const count = async () => {
   const games = await fetch(API_URL);
