@@ -65,7 +65,7 @@ $ npm start to run the local server
 
 ## Click here for live version
 
-- live demo: [](coming soon)
+- live demo: [live demo](https://nickemma.github.io/capstone-project-kanban/)
 
 ## Authors
 
@@ -99,5 +99,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
-=======
-
