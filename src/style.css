@@ -152,7 +152,7 @@ section {
 
 .card-section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-gap: 1rem;
   margin-top: 2rem;
 }
@@ -162,6 +162,10 @@ section {
   border-radius: 0.5rem;
   padding: 2rem;
   color: #fff;
+}
+
+.card-section .card img {
+  width: 100%;
 }
 
 .card-section .content .name-div {
@@ -231,7 +235,7 @@ section {
 
 .popup {
   width: 60vw;
-  height: 90vh;
+  height: 88vh;
   padding: 30px 50px;
   background-color: #2e3130;
   position: fixed;
@@ -402,10 +406,6 @@ section {
     text-align: center;
   }
 
-  .card-section {
-    grid-template-columns: 2fr;
-  }
-
   .popup {
     width: 90vw;
   }
@@ -419,14 +419,6 @@ section {
   .home .home-slider .swiper-button-next,
   .home .home-slider .swiper-button-prev {
     display: none;
-  }
-
-  .card-section {
-    grid-template-columns: 1fr;
-  }
-
-  .card-section .card {
-    padding: 0.3rem;
   }
 
   .card-section .card .comment-btn {
