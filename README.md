@@ -1,92 +1,144 @@
-# Project Name
+# 📗 Table of Contents
 
-Capstone-project Free-To-Game
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Exotic Rentals ](#-exotic-rentals--)
+  - [Backend](#backend)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-# Description the project.
+# 📖 Free-To-Game <a name="about-project"></a>
 
-This is the second Microverse capstone project meant to summarize all the content learned through module 2. The objective was to mimic the appearance of a dynamic web application, in a similar way a web developer would receive the requirements as if it were in a job.
+**Free to game** This project is based on the Free-To-Game API. The data is fetched from the API and gets displayed on the cards. The user can comment on the cards and give likes also.
 
-The pull request is opened to get a review on the project and check for any required changes.
+## 🛠 Built With <a name="built-with"></a>
 
-## Built With
+### Tech Stack <a name="tech-stack"></a>
 
-- HTML
-- CSS
-- Javascript
-- Webpack
-- Gitflow
-- Jest testing
-- Kanban Board (github project)
-- following github flows standards.
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="#">React.js</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">Jest Testing</a></li>
+    <li><a href="#">AOS Animations</a></li>
+    <li><a href="#">API</a></li>
+    <li><a href="#">Webpack</a></li>
+  </ul>
+</details>
 
-## Getting Started
+## 🚀 Live Demo <a name="live-demo"></a>
 
-**This web page is books site with my List planned or shores to do in the future**
+- [Live Demo Link](https://nickemma.github.io/capstone-project-kanban/)
 
-**To do List project works on mobile and desktop using @Media queries .**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
----
+## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running follow these simple example steps.
-follow>>>>>>>>>
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
 
 ### Setup
 
-to use the project To do list please follow :
+Clone this repository to your desired folder:
 
-> Open GitHub and go to my GitHub repository name: capstone-project-kanban.to clone.
-> Click “Code” and copy the given URL.
-> click code and copy the URL.
+```sh
+  cd my-folder
+  git clone git@github.com:NickEmma/capstone-project-kanban.git
+```
 
-> click code and copy the URL.
+### Install
 
-> Open “Git Bash” and change the current working directory to the location where you want the cloned directory.
+Install this project with:
 
-> Type git clone in the terminal, paste the URL you copied earlier, and press “enter” to create your local clone.
-
-> Syntax:
-
-$ git clone {repository URL}
+```sh
+  cd capstone-project-kanban
+  yarn install
+```
 
 ### Usage
 
-> open your directory capstone-kanban/
+To run the project, execute the following command:
 
-\_use vs-code or any IDE to view line code .
+```sh
+  live server
+```
 
----
+### Deployment
 
-$ npm start to run the local server
+You can deploy this project using:
 
----
+```sh
+  git push main
+```
 
-## Click here for live version
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- live demo: [live demo](https://nickemma.github.io/capstone-project-kanban/)
-
-## Authors
+## 👥 Author <a name="author"></a>
 
 👤 **Nicholas Emmanuel**
 
-- GitHub: [@githubhandle](https://github.com/NickEmma)
-- Twitter: [@twitterhandle](https://twitter.com/techieEmma)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/nicholas-emmanuel-6b9775207)
+- GitHub: [@NickEmma](https://github.com/NickEmma)
+- Twitter: [@techieEmma](https://twitter.com/techieEmma)
+- LinkedIn: [@Nicholas Emmanuel](https://www.linkedin.com/in/techieemma/)
 
-## 🤝 Contributing
+👤 **ademibowale Adebowale Adegboye**
+
+- GitHub: [@NickEmma](https://github.com/ademibowale Adebowale Adegboye)
+- Twitter: [@techieEmma](https://twitter.com/ademibowale Adebowale Adegboye)
+- LinkedIn: [@Nicholas Emmanuel](https://www.linkedin.com/in/ademibowale Adebowale Adegboye/)
+
+
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **I will add a feature for a new project.**
+- [ ] **I will add some animations.**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-thanks:
 
-## Show your support
+Feel free to check the [issues page](../../issues/).
 
-Give a ⭐️ if you like this project!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Acknowledgments
+## ⭐️ Show your support <a name="support"></a>
 
-- Microverse
-- Inspiration
-- etc
+If you like this project consider giving it a star ⭐️.
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Microverse for giving me the opportunity to work on this project.
+
+- LazyCoders
+- Coding Partners
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
