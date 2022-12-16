@@ -101,9 +101,9 @@ You can deploy this project using:
 
 👤 **ademibowale Adebowale Adegboye**
 
-- GitHub: [@NickEmma](https://github.com/ademibowale Adebowale Adegboye)
-- Twitter: [@techieEmma](https://twitter.com/ademibowale Adebowale Adegboye)
-- LinkedIn: [@Nicholas Emmanuel](https://www.linkedin.com/in/ademibowale Adebowale Adegboye/)
+- GitHub:(https://github.com/ademibowale)
+- Twitter:(https://twitter.com/ademibowale)
+- LinkedIn:(https://www.linkedin.com/in/ademibowale/)
 
 
 
